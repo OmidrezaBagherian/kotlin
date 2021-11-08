@@ -93,7 +93,9 @@ open class JvmIrCodegenFactory(
         val pluginExtensions = IrGenerationExtension.getInstances(input.project)
 
         val stubGenerator =
-            DeclarationStubGeneratorImpl(psi2irContext.moduleDescriptor, symbolTable, psi2irContext.irBuiltIns, jvmGeneratorExtensions)
+            DeclarationStubGeneratorImpl(
+                psi2irContext.moduleDescriptor, symbolTable, psi2irContext.irBuiltIns, mangler, jvmGeneratorExtensions
+            )
         val frontEndContext = object : TranslationPluginContext {
             override val moduleDescriptor: ModuleDescriptor
                 get() = psi2irContext.moduleDescriptor
@@ -285,7 +287,9 @@ open class JvmIrCodegenFactory(
         extensions: JvmGeneratorExtensionsImpl,
     ): List<IrProvider> {
         return generateTypicalIrProviderList(
-            irModuleFragment.descriptor, irModuleFragment.irBuiltins, symbolTable, extensions = extensions
+            irModuleFragment.descriptor, irModuleFragment.irBuiltins, symbolTable,
+            JvmDescriptorMangler(null),
+            extensions = extensions
         )
     }
 }

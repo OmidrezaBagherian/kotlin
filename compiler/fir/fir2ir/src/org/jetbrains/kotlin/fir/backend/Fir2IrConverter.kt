@@ -406,6 +406,7 @@ class Fir2IrConverter(
             scopeSession: ScopeSession,
             firFiles: List<FirFile>,
             languageVersionSettings: LanguageVersionSettings,
+            descriptorMangler: KotlinMangler.DescriptorMangler,
             signaturer: IdSignatureComposer,
             generatorExtensions: GeneratorExtensions,
             mangler: FirMangler,
