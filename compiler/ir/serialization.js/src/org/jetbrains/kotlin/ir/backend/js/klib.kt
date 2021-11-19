@@ -184,7 +184,7 @@ fun generateIrForKlibSerialization(
     }
 
     if (!configuration.expectActualLinker) {
-        moduleFragment.acceptVoid(ExpectDeclarationRemover(psi2IrContext.symbolTable, false))
+        moduleFragment.transform(ExpectDeclarationRemover(psi2IrContext.symbolTable, false), null)
     }
 
     return moduleFragment
