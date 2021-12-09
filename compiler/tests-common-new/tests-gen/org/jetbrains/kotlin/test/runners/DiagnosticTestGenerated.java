@@ -16892,6 +16892,12 @@ public class DiagnosticTestGenerated extends AbstractDiagnosticTest {
             }
 
             @Test
+            @TestMetadata("genericInlineClass.kt")
+            public void testGenericInlineClass() throws Exception {
+                runTest("compiler/testData/diagnostics/tests/inlineClasses/genericInlineClass.kt");
+            }
+
+            @Test
             @TestMetadata("identityComparisonWithInlineClasses.kt")
             public void testIdentityComparisonWithInlineClasses() throws Exception {
                 runTest("compiler/testData/diagnostics/tests/inlineClasses/identityComparisonWithInlineClasses.kt");
@@ -16985,6 +16991,12 @@ public class DiagnosticTestGenerated extends AbstractDiagnosticTest {
             @TestMetadata("recursiveInlineClasses.kt")
             public void testRecursiveInlineClasses() throws Exception {
                 runTest("compiler/testData/diagnostics/tests/inlineClasses/recursiveInlineClasses.kt");
+            }
+
+            @Test
+            @TestMetadata("reifiedGenericUnderlyingType.kt")
+            public void testReifiedGenericUnderlyingType() throws Exception {
+                runTest("compiler/testData/diagnostics/tests/inlineClasses/reifiedGenericUnderlyingType.kt");
             }
 
             @Test
