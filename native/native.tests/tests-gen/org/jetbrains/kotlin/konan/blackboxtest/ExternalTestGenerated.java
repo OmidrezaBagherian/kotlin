@@ -17265,15 +17265,25 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
             public class BoxReturnValueInLambda {
                 public BoxReturnValueInLambda() {
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueInLambda/boxAny.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/boxReturnValueInLambda/boxAnyGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueInLambda/boxFunLiteralAny.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/boxReturnValueInLambda/boxFunLiteralAnyGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueInLambda/boxInt.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/boxReturnValueInLambda/boxIntGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueInLambda/boxNullableAny.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/boxReturnValueInLambda/boxNullableAnyGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueInLambda/boxNullableAnyNull.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/boxReturnValueInLambda/boxNullableAnyNullGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueInLambda/boxNullableInt.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/boxReturnValueInLambda/boxNullableIntGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueInLambda/boxNullableIntNull.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/boxReturnValueInLambda/boxNullableIntNullGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueInLambda/boxNullableString.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/boxReturnValueInLambda/boxNullableStringGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueInLambda/boxNullableStringNull.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/boxReturnValueInLambda/boxNullableStringNullGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueInLambda/boxString.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/boxReturnValueInLambda/boxStringGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                 }
 
                 @Test
@@ -17289,10 +17299,24 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("boxAnyGeneric.kt")
+                public void testBoxAnyGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueInLambda/boxAnyGeneric.kt");
+                }
+
+                @Test
                 @TestMetadata("boxFunLiteralAny.kt")
                 public void testBoxFunLiteralAny() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                     runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueInLambda/boxFunLiteralAny.kt");
+                }
+
+                @Test
+                @TestMetadata("boxFunLiteralAnyGeneric.kt")
+                public void testBoxFunLiteralAnyGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueInLambda/boxFunLiteralAnyGeneric.kt");
                 }
 
                 @Test
@@ -17303,10 +17327,24 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("boxIntGeneric.kt")
+                public void testBoxIntGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueInLambda/boxIntGeneric.kt");
+                }
+
+                @Test
                 @TestMetadata("boxNullableAny.kt")
                 public void testBoxNullableAny() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                     runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueInLambda/boxNullableAny.kt");
+                }
+
+                @Test
+                @TestMetadata("boxNullableAnyGeneric.kt")
+                public void testBoxNullableAnyGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueInLambda/boxNullableAnyGeneric.kt");
                 }
 
                 @Test
@@ -17317,10 +17355,24 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("boxNullableAnyNullGeneric.kt")
+                public void testBoxNullableAnyNullGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueInLambda/boxNullableAnyNullGeneric.kt");
+                }
+
+                @Test
                 @TestMetadata("boxNullableInt.kt")
                 public void testBoxNullableInt() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                     runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueInLambda/boxNullableInt.kt");
+                }
+
+                @Test
+                @TestMetadata("boxNullableIntGeneric.kt")
+                public void testBoxNullableIntGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueInLambda/boxNullableIntGeneric.kt");
                 }
 
                 @Test
@@ -17331,10 +17383,24 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("boxNullableIntNullGeneric.kt")
+                public void testBoxNullableIntNullGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueInLambda/boxNullableIntNullGeneric.kt");
+                }
+
+                @Test
                 @TestMetadata("boxNullableString.kt")
                 public void testBoxNullableString() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                     runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueInLambda/boxNullableString.kt");
+                }
+
+                @Test
+                @TestMetadata("boxNullableStringGeneric.kt")
+                public void testBoxNullableStringGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueInLambda/boxNullableStringGeneric.kt");
                 }
 
                 @Test
@@ -17345,10 +17411,24 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("boxNullableStringNullGeneric.kt")
+                public void testBoxNullableStringNullGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueInLambda/boxNullableStringNullGeneric.kt");
+                }
+
+                @Test
                 @TestMetadata("boxString.kt")
                 public void testBoxString() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                     runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueInLambda/boxString.kt");
+                }
+
+                @Test
+                @TestMetadata("boxStringGeneric.kt")
+                public void testBoxStringGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueInLambda/boxStringGeneric.kt");
                 }
 
                 @Test
@@ -17372,33 +17452,60 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
             public class BoxReturnValueOnOverride {
                 public BoxReturnValueOnOverride() {
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/boxReturnValueInDefaultMethod.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/boxReturnValueInDefaultMethodGenericInt.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/covariantOverrideChainErasedToAny.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/covariantOverrideChainErasedToAnyGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/covariantOverrideChainErasedToNullableAny.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/covariantOverrideChainErasedToNullableAnyGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/covariantOverrideErasedToAny.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/covariantOverrideErasedToAnyGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/covariantOverrideErasedToInterface.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/covariantOverrideErasedToInterfaceGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/covariantOverrideErasedToPrimitive.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/covariantOverrideErasedToPrimitiveGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/covariantOverrideListVsMutableList.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/covariantOverrideListVsMutableListGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/covariantOverrideUnrelatedInterfaces.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/covariantOverrideUnrelatedInterfacesGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/genericOverride.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/genericOverrideGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/genericOverrideSpecialized.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/genericOverrideSpecializedGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/inlineClassInOverriddenReturnTypes.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/inlineClassInOverriddenReturnTypesGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/kt28483.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/kt28483Generic.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/kt31585.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/kt31585Generic.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/kt35234.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/kt35234Generic.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/kt35234a.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/overrideGenericWithInlineClass.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/overrideGenericWithInlineClassGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/overrideGenericWithNullableInlineClassUpperBoundWithNonNullAny.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/overrideGenericWithNullableInlineClassUpperBoundWithNonNullAnyGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/overrideGenericWithNullableInlineClassUpperBoundWithNonNullNullableAny.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/overrideGenericWithNullableInlineClassUpperBoundWithNonNullNullableAnyGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/overrideGenericWithNullableInlineClassUpperBoundWithNonNullNullableAnyNull.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/overrideGenericWithNullableInlineClassUpperBoundWithNonNullNullableAnyNullGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/overrideNullableInlineClassWithNonNullAny.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/overrideNullableInlineClassWithNonNullAnyGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/overrideNullableInlineClassWithNonNullNullableAny.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/overrideNullableInlineClassWithNonNullNullableAnyGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/overrideNullableInlineClassWithNonNullNullableAnyNull.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/overrideNullableInlineClassWithNonNullNullableAnyNullGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/relatedReturnTypes1a.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/relatedReturnTypes1aGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/relatedReturnTypes1b.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/relatedReturnTypes1bGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/relatedReturnTypes2a.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/relatedReturnTypes2aGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/relatedReturnTypes2b.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/relatedReturnTypes2bGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/uncastInlineClassToAnyAndBack.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/uncastInlineClassToAnyAndBackGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/unrelatedGenerics.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/unrelatedGenericsGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                 }
 
                 @Test
@@ -17414,10 +17521,24 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("boxReturnValueInDefaultMethodGenericInt.kt")
+                public void testBoxReturnValueInDefaultMethodGenericInt() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/boxReturnValueInDefaultMethodGenericInt.kt");
+                }
+
+                @Test
                 @TestMetadata("covariantOverrideChainErasedToAny.kt")
                 public void testCovariantOverrideChainErasedToAny() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                     runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/covariantOverrideChainErasedToAny.kt");
+                }
+
+                @Test
+                @TestMetadata("covariantOverrideChainErasedToAnyGeneric.kt")
+                public void testCovariantOverrideChainErasedToAnyGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/covariantOverrideChainErasedToAnyGeneric.kt");
                 }
 
                 @Test
@@ -17428,10 +17549,24 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("covariantOverrideChainErasedToNullableAnyGeneric.kt")
+                public void testCovariantOverrideChainErasedToNullableAnyGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/covariantOverrideChainErasedToNullableAnyGeneric.kt");
+                }
+
+                @Test
                 @TestMetadata("covariantOverrideErasedToAny.kt")
                 public void testCovariantOverrideErasedToAny() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                     runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/covariantOverrideErasedToAny.kt");
+                }
+
+                @Test
+                @TestMetadata("covariantOverrideErasedToAnyGeneric.kt")
+                public void testCovariantOverrideErasedToAnyGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/covariantOverrideErasedToAnyGeneric.kt");
                 }
 
                 @Test
@@ -17442,10 +17577,24 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("covariantOverrideErasedToInterfaceGeneric.kt")
+                public void testCovariantOverrideErasedToInterfaceGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/covariantOverrideErasedToInterfaceGeneric.kt");
+                }
+
+                @Test
                 @TestMetadata("covariantOverrideErasedToPrimitive.kt")
                 public void testCovariantOverrideErasedToPrimitive() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                     runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/covariantOverrideErasedToPrimitive.kt");
+                }
+
+                @Test
+                @TestMetadata("covariantOverrideErasedToPrimitiveGeneric.kt")
+                public void testCovariantOverrideErasedToPrimitiveGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/covariantOverrideErasedToPrimitiveGeneric.kt");
                 }
 
                 @Test
@@ -17456,10 +17605,24 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("covariantOverrideListVsMutableListGeneric.kt")
+                public void testCovariantOverrideListVsMutableListGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/covariantOverrideListVsMutableListGeneric.kt");
+                }
+
+                @Test
                 @TestMetadata("covariantOverrideUnrelatedInterfaces.kt")
                 public void testCovariantOverrideUnrelatedInterfaces() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                     runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/covariantOverrideUnrelatedInterfaces.kt");
+                }
+
+                @Test
+                @TestMetadata("covariantOverrideUnrelatedInterfacesGeneric.kt")
+                public void testCovariantOverrideUnrelatedInterfacesGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/covariantOverrideUnrelatedInterfacesGeneric.kt");
                 }
 
                 @Test
@@ -17470,10 +17633,24 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("genericOverrideGeneric.kt")
+                public void testGenericOverrideGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/genericOverrideGeneric.kt");
+                }
+
+                @Test
                 @TestMetadata("genericOverrideSpecialized.kt")
                 public void testGenericOverrideSpecialized() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                     runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/genericOverrideSpecialized.kt");
+                }
+
+                @Test
+                @TestMetadata("genericOverrideSpecializedGeneric.kt")
+                public void testGenericOverrideSpecializedGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/genericOverrideSpecializedGeneric.kt");
                 }
 
                 @Test
@@ -17484,10 +17661,24 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("inlineClassInOverriddenReturnTypesGeneric.kt")
+                public void testInlineClassInOverriddenReturnTypesGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/inlineClassInOverriddenReturnTypesGeneric.kt");
+                }
+
+                @Test
                 @TestMetadata("kt28483.kt")
                 public void testKt28483() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                     runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/kt28483.kt");
+                }
+
+                @Test
+                @TestMetadata("kt28483Generic.kt")
+                public void testKt28483Generic() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/kt28483Generic.kt");
                 }
 
                 @Test
@@ -17498,10 +17689,24 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("kt31585Generic.kt")
+                public void testKt31585Generic() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/kt31585Generic.kt");
+                }
+
+                @Test
                 @TestMetadata("kt35234.kt")
                 public void testKt35234() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                     runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/kt35234.kt");
+                }
+
+                @Test
+                @TestMetadata("kt35234Generic.kt")
+                public void testKt35234Generic() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/kt35234Generic.kt");
                 }
 
                 @Test
@@ -17519,10 +17724,24 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("overrideGenericWithInlineClassGeneric.kt")
+                public void testOverrideGenericWithInlineClassGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/overrideGenericWithInlineClassGeneric.kt");
+                }
+
+                @Test
                 @TestMetadata("overrideGenericWithNullableInlineClassUpperBoundWithNonNullAny.kt")
                 public void testOverrideGenericWithNullableInlineClassUpperBoundWithNonNullAny() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                     runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/overrideGenericWithNullableInlineClassUpperBoundWithNonNullAny.kt");
+                }
+
+                @Test
+                @TestMetadata("overrideGenericWithNullableInlineClassUpperBoundWithNonNullAnyGeneric.kt")
+                public void testOverrideGenericWithNullableInlineClassUpperBoundWithNonNullAnyGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/overrideGenericWithNullableInlineClassUpperBoundWithNonNullAnyGeneric.kt");
                 }
 
                 @Test
@@ -17533,10 +17752,24 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("overrideGenericWithNullableInlineClassUpperBoundWithNonNullNullableAnyGeneric.kt")
+                public void testOverrideGenericWithNullableInlineClassUpperBoundWithNonNullNullableAnyGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/overrideGenericWithNullableInlineClassUpperBoundWithNonNullNullableAnyGeneric.kt");
+                }
+
+                @Test
                 @TestMetadata("overrideGenericWithNullableInlineClassUpperBoundWithNonNullNullableAnyNull.kt")
                 public void testOverrideGenericWithNullableInlineClassUpperBoundWithNonNullNullableAnyNull() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                     runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/overrideGenericWithNullableInlineClassUpperBoundWithNonNullNullableAnyNull.kt");
+                }
+
+                @Test
+                @TestMetadata("overrideGenericWithNullableInlineClassUpperBoundWithNonNullNullableAnyNullGeneric.kt")
+                public void testOverrideGenericWithNullableInlineClassUpperBoundWithNonNullNullableAnyNullGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/overrideGenericWithNullableInlineClassUpperBoundWithNonNullNullableAnyNullGeneric.kt");
                 }
 
                 @Test
@@ -17547,10 +17780,24 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("overrideNullableInlineClassWithNonNullAnyGeneric.kt")
+                public void testOverrideNullableInlineClassWithNonNullAnyGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/overrideNullableInlineClassWithNonNullAnyGeneric.kt");
+                }
+
+                @Test
                 @TestMetadata("overrideNullableInlineClassWithNonNullNullableAny.kt")
                 public void testOverrideNullableInlineClassWithNonNullNullableAny() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                     runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/overrideNullableInlineClassWithNonNullNullableAny.kt");
+                }
+
+                @Test
+                @TestMetadata("overrideNullableInlineClassWithNonNullNullableAnyGeneric.kt")
+                public void testOverrideNullableInlineClassWithNonNullNullableAnyGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/overrideNullableInlineClassWithNonNullNullableAnyGeneric.kt");
                 }
 
                 @Test
@@ -17561,10 +17808,24 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("overrideNullableInlineClassWithNonNullNullableAnyNullGeneric.kt")
+                public void testOverrideNullableInlineClassWithNonNullNullableAnyNullGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/overrideNullableInlineClassWithNonNullNullableAnyNullGeneric.kt");
+                }
+
+                @Test
                 @TestMetadata("relatedReturnTypes1a.kt")
                 public void testRelatedReturnTypes1a() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                     runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/relatedReturnTypes1a.kt");
+                }
+
+                @Test
+                @TestMetadata("relatedReturnTypes1aGeneric.kt")
+                public void testRelatedReturnTypes1aGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/relatedReturnTypes1aGeneric.kt");
                 }
 
                 @Test
@@ -17575,10 +17836,24 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("relatedReturnTypes1bGeneric.kt")
+                public void testRelatedReturnTypes1bGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/relatedReturnTypes1bGeneric.kt");
+                }
+
+                @Test
                 @TestMetadata("relatedReturnTypes2a.kt")
                 public void testRelatedReturnTypes2a() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                     runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/relatedReturnTypes2a.kt");
+                }
+
+                @Test
+                @TestMetadata("relatedReturnTypes2aGeneric.kt")
+                public void testRelatedReturnTypes2aGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/relatedReturnTypes2aGeneric.kt");
                 }
 
                 @Test
@@ -17589,6 +17864,13 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("relatedReturnTypes2bGeneric.kt")
+                public void testRelatedReturnTypes2bGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/relatedReturnTypes2bGeneric.kt");
+                }
+
+                @Test
                 @TestMetadata("uncastInlineClassToAnyAndBack.kt")
                 public void testUncastInlineClassToAnyAndBack() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
@@ -17596,10 +17878,24 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("uncastInlineClassToAnyAndBackGeneric.kt")
+                public void testUncastInlineClassToAnyAndBackGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/uncastInlineClassToAnyAndBackGeneric.kt");
+                }
+
+                @Test
                 @TestMetadata("unrelatedGenerics.kt")
                 public void testUnrelatedGenerics() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                     runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/unrelatedGenerics.kt");
+                }
+
+                @Test
+                @TestMetadata("unrelatedGenericsGeneric.kt")
+                public void testUnrelatedGenericsGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/boxReturnValueOnOverride/unrelatedGenericsGeneric.kt");
                 }
             }
 
@@ -17611,25 +17907,45 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
             public class CallableReferences {
                 public CallableReferences() {
                     register("compiler/testData/codegen/box/inlineClasses/callableReferences/boundInlineClassExtensionFun.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/callableReferences/boundInlineClassExtensionFunGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/callableReferences/boundInlineClassExtensionVal.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/callableReferences/boundInlineClassExtensionValGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/callableReferences/boundInlineClassMemberFun.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/callableReferences/boundInlineClassMemberFunGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/callableReferences/boundInlineClassMemberVal.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/callableReferences/boundInlineClassMemberValGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/callableReferences/boundInlineClassPrimaryVal.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/callableReferences/boundInlineClassPrimaryValGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/callableReferences/constructorWithInlineClassParameters.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/callableReferences/constructorWithInlineClassParametersGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/callableReferences/equalsHashCodeToString.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/callableReferences/equalsHashCodeToStringGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/callableReferences/funWithInlineClassParameters.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/callableReferences/funWithInlineClassParametersGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassExtensionFun.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassExtensionFunGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassExtensionVal.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassExtensionValGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassInternalPrimaryVal.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassInternalPrimaryValGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassMemberFun.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassMemberFunGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassMemberVal.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassMemberValGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassPrimaryConstructor.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassPrimaryConstructorGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassPrimaryVal.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassPrimaryValGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassPrivatePrimaryVal.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassPrivatePrimaryValGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassTypeBoundMemberVar.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassTypeBoundMemberVarGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassTypeMemberVar.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassTypeMemberVarGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassTypeTopLevelVar.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassTypeTopLevelVarGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/callableReferences/kt37986.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/callableReferences/kt37986Generic.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                 }
 
                 @Test
@@ -17645,10 +17961,24 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("boundInlineClassExtensionFunGeneric.kt")
+                public void testBoundInlineClassExtensionFunGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/boundInlineClassExtensionFunGeneric.kt");
+                }
+
+                @Test
                 @TestMetadata("boundInlineClassExtensionVal.kt")
                 public void testBoundInlineClassExtensionVal() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                     runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/boundInlineClassExtensionVal.kt");
+                }
+
+                @Test
+                @TestMetadata("boundInlineClassExtensionValGeneric.kt")
+                public void testBoundInlineClassExtensionValGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/boundInlineClassExtensionValGeneric.kt");
                 }
 
                 @Test
@@ -17659,10 +17989,24 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("boundInlineClassMemberFunGeneric.kt")
+                public void testBoundInlineClassMemberFunGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/boundInlineClassMemberFunGeneric.kt");
+                }
+
+                @Test
                 @TestMetadata("boundInlineClassMemberVal.kt")
                 public void testBoundInlineClassMemberVal() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                     runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/boundInlineClassMemberVal.kt");
+                }
+
+                @Test
+                @TestMetadata("boundInlineClassMemberValGeneric.kt")
+                public void testBoundInlineClassMemberValGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/boundInlineClassMemberValGeneric.kt");
                 }
 
                 @Test
@@ -17673,10 +18017,24 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("boundInlineClassPrimaryValGeneric.kt")
+                public void testBoundInlineClassPrimaryValGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/boundInlineClassPrimaryValGeneric.kt");
+                }
+
+                @Test
                 @TestMetadata("constructorWithInlineClassParameters.kt")
                 public void testConstructorWithInlineClassParameters() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                     runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/constructorWithInlineClassParameters.kt");
+                }
+
+                @Test
+                @TestMetadata("constructorWithInlineClassParametersGeneric.kt")
+                public void testConstructorWithInlineClassParametersGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/constructorWithInlineClassParametersGeneric.kt");
                 }
 
                 @Test
@@ -17687,10 +18045,24 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("equalsHashCodeToStringGeneric.kt")
+                public void testEqualsHashCodeToStringGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/equalsHashCodeToStringGeneric.kt");
+                }
+
+                @Test
                 @TestMetadata("funWithInlineClassParameters.kt")
                 public void testFunWithInlineClassParameters() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                     runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/funWithInlineClassParameters.kt");
+                }
+
+                @Test
+                @TestMetadata("funWithInlineClassParametersGeneric.kt")
+                public void testFunWithInlineClassParametersGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/funWithInlineClassParametersGeneric.kt");
                 }
 
                 @Test
@@ -17701,10 +18073,24 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("inlineClassExtensionFunGeneric.kt")
+                public void testInlineClassExtensionFunGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassExtensionFunGeneric.kt");
+                }
+
+                @Test
                 @TestMetadata("inlineClassExtensionVal.kt")
                 public void testInlineClassExtensionVal() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                     runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassExtensionVal.kt");
+                }
+
+                @Test
+                @TestMetadata("inlineClassExtensionValGeneric.kt")
+                public void testInlineClassExtensionValGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassExtensionValGeneric.kt");
                 }
 
                 @Test
@@ -17715,10 +18101,24 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("inlineClassInternalPrimaryValGeneric.kt")
+                public void testInlineClassInternalPrimaryValGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassInternalPrimaryValGeneric.kt");
+                }
+
+                @Test
                 @TestMetadata("inlineClassMemberFun.kt")
                 public void testInlineClassMemberFun() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                     runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassMemberFun.kt");
+                }
+
+                @Test
+                @TestMetadata("inlineClassMemberFunGeneric.kt")
+                public void testInlineClassMemberFunGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassMemberFunGeneric.kt");
                 }
 
                 @Test
@@ -17729,10 +18129,24 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("inlineClassMemberValGeneric.kt")
+                public void testInlineClassMemberValGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassMemberValGeneric.kt");
+                }
+
+                @Test
                 @TestMetadata("inlineClassPrimaryConstructor.kt")
                 public void testInlineClassPrimaryConstructor() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                     runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassPrimaryConstructor.kt");
+                }
+
+                @Test
+                @TestMetadata("inlineClassPrimaryConstructorGeneric.kt")
+                public void testInlineClassPrimaryConstructorGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassPrimaryConstructorGeneric.kt");
                 }
 
                 @Test
@@ -17743,10 +18157,24 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("inlineClassPrimaryValGeneric.kt")
+                public void testInlineClassPrimaryValGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassPrimaryValGeneric.kt");
+                }
+
+                @Test
                 @TestMetadata("inlineClassPrivatePrimaryVal.kt")
                 public void testInlineClassPrivatePrimaryVal() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                     runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassPrivatePrimaryVal.kt");
+                }
+
+                @Test
+                @TestMetadata("inlineClassPrivatePrimaryValGeneric.kt")
+                public void testInlineClassPrivatePrimaryValGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassPrivatePrimaryValGeneric.kt");
                 }
 
                 @Test
@@ -17757,10 +18185,24 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("inlineClassTypeBoundMemberVarGeneric.kt")
+                public void testInlineClassTypeBoundMemberVarGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassTypeBoundMemberVarGeneric.kt");
+                }
+
+                @Test
                 @TestMetadata("inlineClassTypeMemberVar.kt")
                 public void testInlineClassTypeMemberVar() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                     runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassTypeMemberVar.kt");
+                }
+
+                @Test
+                @TestMetadata("inlineClassTypeMemberVarGeneric.kt")
+                public void testInlineClassTypeMemberVarGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassTypeMemberVarGeneric.kt");
                 }
 
                 @Test
@@ -17771,10 +18213,24 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("inlineClassTypeTopLevelVarGeneric.kt")
+                public void testInlineClassTypeTopLevelVarGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/inlineClassTypeTopLevelVarGeneric.kt");
+                }
+
+                @Test
                 @TestMetadata("kt37986.kt")
                 public void testKt37986() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                     runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/kt37986.kt");
+                }
+
+                @Test
+                @TestMetadata("kt37986Generic.kt")
+                public void testKt37986Generic() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/kt37986Generic.kt");
                 }
 
                 @Nested
@@ -17785,12 +18241,19 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 public class Let {
                     public Let() {
                         register("compiler/testData/codegen/box/inlineClasses/callableReferences/let/any.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                        register("compiler/testData/codegen/box/inlineClasses/callableReferences/let/anyGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                         register("compiler/testData/codegen/box/inlineClasses/callableReferences/let/anyN.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                        register("compiler/testData/codegen/box/inlineClasses/callableReferences/let/anyNGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                         register("compiler/testData/codegen/box/inlineClasses/callableReferences/let/int.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                        register("compiler/testData/codegen/box/inlineClasses/callableReferences/let/intGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                         register("compiler/testData/codegen/box/inlineClasses/callableReferences/let/intN.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                        register("compiler/testData/codegen/box/inlineClasses/callableReferences/let/intNGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                         register("compiler/testData/codegen/box/inlineClasses/callableReferences/let/null.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                        register("compiler/testData/codegen/box/inlineClasses/callableReferences/let/nullGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                         register("compiler/testData/codegen/box/inlineClasses/callableReferences/let/string.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                        register("compiler/testData/codegen/box/inlineClasses/callableReferences/let/stringGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                         register("compiler/testData/codegen/box/inlineClasses/callableReferences/let/stringN.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                        register("compiler/testData/codegen/box/inlineClasses/callableReferences/let/stringNGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     }
 
                     @Test
@@ -17806,10 +18269,24 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                     }
 
                     @Test
+                    @TestMetadata("anyGeneric.kt")
+                    public void testAnyGeneric() throws Exception {
+                        // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                        runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/let/anyGeneric.kt");
+                    }
+
+                    @Test
                     @TestMetadata("anyN.kt")
                     public void testAnyN() throws Exception {
                         // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                         runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/let/anyN.kt");
+                    }
+
+                    @Test
+                    @TestMetadata("anyNGeneric.kt")
+                    public void testAnyNGeneric() throws Exception {
+                        // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                        runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/let/anyNGeneric.kt");
                     }
 
                     @Test
@@ -17820,6 +18297,13 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                     }
 
                     @Test
+                    @TestMetadata("intGeneric.kt")
+                    public void testIntGeneric() throws Exception {
+                        // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                        runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/let/intGeneric.kt");
+                    }
+
+                    @Test
                     @TestMetadata("intN.kt")
                     public void testIntN() throws Exception {
                         // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
@@ -17827,10 +18311,24 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                     }
 
                     @Test
+                    @TestMetadata("intNGeneric.kt")
+                    public void testIntNGeneric() throws Exception {
+                        // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                        runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/let/intNGeneric.kt");
+                    }
+
+                    @Test
                     @TestMetadata("null.kt")
                     public void testNull() throws Exception {
                         // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                         runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/let/null.kt");
+                    }
+
+                    @Test
+                    @TestMetadata("nullGeneric.kt")
+                    public void testNullGeneric() throws Exception {
+                        // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                        runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/let/nullGeneric.kt");
                     }
 
                     @Test
@@ -17847,10 +18345,24 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                     }
 
                     @Test
+                    @TestMetadata("stringGeneric.kt")
+                    public void testStringGeneric() throws Exception {
+                        // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                        runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/let/stringGeneric.kt");
+                    }
+
+                    @Test
                     @TestMetadata("stringN.kt")
                     public void testStringN() throws Exception {
                         // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                         runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/let/stringN.kt");
+                    }
+
+                    @Test
+                    @TestMetadata("stringNGeneric.kt")
+                    public void testStringNGeneric() throws Exception {
+                        // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                        runTest("compiler/testData/codegen/box/inlineClasses/callableReferences/let/stringNGeneric.kt");
                     }
                 }
             }
@@ -17864,26 +18376,48 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 public ContextsAndAccessors() {
                     register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/accessPrivateInlineClassCompanionMethod.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/accessPrivateInlineClassCompanionMethod2.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/accessPrivateInlineClassCompanionMethod2Generic.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/accessPrivateInlineClassCompanionMethodGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/accessPrivateInlineClassConstructorFromCompanion.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/accessPrivateInlineClassConstructorFromCompanionGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/accessPrivateInlineClassConstructorFromLambda.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/accessPrivateInlineClassConstructorFromLambdaGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/accessPrivateInlineClassMethodFromCompanion.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/accessPrivateInlineClassMethodFromCompanion2.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/accessPrivateInlineClassMethodFromCompanion2Generic.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/accessPrivateInlineClassMethodFromCompanionGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/accessPrivateInlineClassMethodFromInlineLambda.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/accessPrivateInlineClassMethodFromInlineLambda2.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/accessPrivateInlineClassMethodFromInlineLambda2Generic.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/accessPrivateInlineClassMethodFromInlineLambdaGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/accessPrivateInlineClassMethodFromLambda.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/accessPrivateInlineClassMethodFromLambda2.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/accessPrivateInlineClassMethodFromLambda2Generic.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/accessPrivateInlineClassMethodFromLambdaGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/accessPrivateStaticInlineClassCompanionMethod.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/accessPrivateStaticInlineClassCompanionMethodGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/captureInlineClassInstanceInLambda.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/captureInlineClassInstanceInLambda2.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/captureInlineClassInstanceInLambda2Generic.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/captureInlineClassInstanceInLambdaGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/captureInlineClassInstanceInObject.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/captureInlineClassInstanceInObjectGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/inlineLambdaInInlineClassFun.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/inlineLambdaInInlineClassFunGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/kt26858.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/kt26858Generic.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/kt27513.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/kt27513Generic.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/kt30780.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/kt30780Generic.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/lambdaInInlineClassFun.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/lambdaInInlineClassFunGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/objectInInlineClassFun.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/objectInInlineClassFunGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/toPrivateCompanionFun.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/toPrivateCompanionFunGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/toPrivateCompanionVal.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                    register("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/toPrivateCompanionValGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                 }
 
                 @Test
@@ -17901,6 +18435,20 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("accessPrivateInlineClassCompanionMethod2Generic.kt")
+                public void testAccessPrivateInlineClassCompanionMethod2Generic() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/accessPrivateInlineClassCompanionMethod2Generic.kt");
+                }
+
+                @Test
+                @TestMetadata("accessPrivateInlineClassCompanionMethodGeneric.kt")
+                public void testAccessPrivateInlineClassCompanionMethodGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/accessPrivateInlineClassCompanionMethodGeneric.kt");
+                }
+
+                @Test
                 @TestMetadata("accessPrivateInlineClassConstructorFromCompanion.kt")
                 public void testAccessPrivateInlineClassConstructorFromCompanion() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
@@ -17908,10 +18456,24 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("accessPrivateInlineClassConstructorFromCompanionGeneric.kt")
+                public void testAccessPrivateInlineClassConstructorFromCompanionGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/accessPrivateInlineClassConstructorFromCompanionGeneric.kt");
+                }
+
+                @Test
                 @TestMetadata("accessPrivateInlineClassConstructorFromLambda.kt")
                 public void testAccessPrivateInlineClassConstructorFromLambda() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                     runTest("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/accessPrivateInlineClassConstructorFromLambda.kt");
+                }
+
+                @Test
+                @TestMetadata("accessPrivateInlineClassConstructorFromLambdaGeneric.kt")
+                public void testAccessPrivateInlineClassConstructorFromLambdaGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/accessPrivateInlineClassConstructorFromLambdaGeneric.kt");
                 }
 
                 @Test
@@ -17929,6 +18491,20 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("accessPrivateInlineClassMethodFromCompanion2Generic.kt")
+                public void testAccessPrivateInlineClassMethodFromCompanion2Generic() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/accessPrivateInlineClassMethodFromCompanion2Generic.kt");
+                }
+
+                @Test
+                @TestMetadata("accessPrivateInlineClassMethodFromCompanionGeneric.kt")
+                public void testAccessPrivateInlineClassMethodFromCompanionGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/accessPrivateInlineClassMethodFromCompanionGeneric.kt");
+                }
+
+                @Test
                 @TestMetadata("accessPrivateInlineClassMethodFromInlineLambda.kt")
                 public void testAccessPrivateInlineClassMethodFromInlineLambda() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
@@ -17943,6 +18519,20 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("accessPrivateInlineClassMethodFromInlineLambda2Generic.kt")
+                public void testAccessPrivateInlineClassMethodFromInlineLambda2Generic() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/accessPrivateInlineClassMethodFromInlineLambda2Generic.kt");
+                }
+
+                @Test
+                @TestMetadata("accessPrivateInlineClassMethodFromInlineLambdaGeneric.kt")
+                public void testAccessPrivateInlineClassMethodFromInlineLambdaGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/accessPrivateInlineClassMethodFromInlineLambdaGeneric.kt");
+                }
+
+                @Test
                 @TestMetadata("accessPrivateInlineClassMethodFromLambda.kt")
                 public void testAccessPrivateInlineClassMethodFromLambda() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
@@ -17954,6 +18544,20 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 public void testAccessPrivateInlineClassMethodFromLambda2() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                     runTest("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/accessPrivateInlineClassMethodFromLambda2.kt");
+                }
+
+                @Test
+                @TestMetadata("accessPrivateInlineClassMethodFromLambda2Generic.kt")
+                public void testAccessPrivateInlineClassMethodFromLambda2Generic() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/accessPrivateInlineClassMethodFromLambda2Generic.kt");
+                }
+
+                @Test
+                @TestMetadata("accessPrivateInlineClassMethodFromLambdaGeneric.kt")
+                public void testAccessPrivateInlineClassMethodFromLambdaGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/accessPrivateInlineClassMethodFromLambdaGeneric.kt");
                 }
 
                 @Test
@@ -17976,10 +18580,31 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("captureInlineClassInstanceInLambda2Generic.kt")
+                public void testCaptureInlineClassInstanceInLambda2Generic() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/captureInlineClassInstanceInLambda2Generic.kt");
+                }
+
+                @Test
+                @TestMetadata("captureInlineClassInstanceInLambdaGeneric.kt")
+                public void testCaptureInlineClassInstanceInLambdaGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/captureInlineClassInstanceInLambdaGeneric.kt");
+                }
+
+                @Test
                 @TestMetadata("captureInlineClassInstanceInObject.kt")
                 public void testCaptureInlineClassInstanceInObject() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                     runTest("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/captureInlineClassInstanceInObject.kt");
+                }
+
+                @Test
+                @TestMetadata("captureInlineClassInstanceInObjectGeneric.kt")
+                public void testCaptureInlineClassInstanceInObjectGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/captureInlineClassInstanceInObjectGeneric.kt");
                 }
 
                 @Test
@@ -17990,10 +18615,24 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("inlineLambdaInInlineClassFunGeneric.kt")
+                public void testInlineLambdaInInlineClassFunGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/inlineLambdaInInlineClassFunGeneric.kt");
+                }
+
+                @Test
                 @TestMetadata("kt26858.kt")
                 public void testKt26858() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                     runTest("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/kt26858.kt");
+                }
+
+                @Test
+                @TestMetadata("kt26858Generic.kt")
+                public void testKt26858Generic() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/kt26858Generic.kt");
                 }
 
                 @Test
@@ -18004,10 +18643,24 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("kt27513Generic.kt")
+                public void testKt27513Generic() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/kt27513Generic.kt");
+                }
+
+                @Test
                 @TestMetadata("kt30780.kt")
                 public void testKt30780() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                     runTest("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/kt30780.kt");
+                }
+
+                @Test
+                @TestMetadata("kt30780Generic.kt")
+                public void testKt30780Generic() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/kt30780Generic.kt");
                 }
 
                 @Test
@@ -18018,10 +18671,24 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("lambdaInInlineClassFunGeneric.kt")
+                public void testLambdaInInlineClassFunGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/lambdaInInlineClassFunGeneric.kt");
+                }
+
+                @Test
                 @TestMetadata("objectInInlineClassFun.kt")
                 public void testObjectInInlineClassFun() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                     runTest("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/objectInInlineClassFun.kt");
+                }
+
+                @Test
+                @TestMetadata("objectInInlineClassFunGeneric.kt")
+                public void testObjectInInlineClassFunGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/objectInInlineClassFunGeneric.kt");
                 }
 
                 @Test
@@ -18032,10 +18699,24 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 }
 
                 @Test
+                @TestMetadata("toPrivateCompanionFunGeneric.kt")
+                public void testToPrivateCompanionFunGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/toPrivateCompanionFunGeneric.kt");
+                }
+
+                @Test
                 @TestMetadata("toPrivateCompanionVal.kt")
                 public void testToPrivateCompanionVal() throws Exception {
                     // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
                     runTest("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/toPrivateCompanionVal.kt");
+                }
+
+                @Test
+                @TestMetadata("toPrivateCompanionValGeneric.kt")
+                public void testToPrivateCompanionValGeneric() throws Exception {
+                    // There is a registered source transformer for the testcase: TransformersFunctions.getRemoveOptionalJvmInlineAnnotation()
+                    runTest("compiler/testData/codegen/box/inlineClasses/contextsAndAccessors/toPrivateCompanionValGeneric.kt");
                 }
             }
 
@@ -18157,9 +18838,13 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 public class DefaultWithDefaultParameter {
                     public DefaultWithDefaultParameter() {
                         register("compiler/testData/codegen/box/inlineClasses/defaultParameterValues/defaultWithDefaultParameter/all.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                        register("compiler/testData/codegen/box/inlineClasses/defaultParameterValues/defaultWithDefaultParameter/allGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                         register("compiler/testData/codegen/box/inlineClasses/defaultParameterValues/defaultWithDefaultParameter/all-compatibility.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                        register("compiler/testData/codegen/box/inlineClasses/defaultParameterValues/defaultWithDefaultParameter/all-compatibilityGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                         register("compiler/testData/codegen/box/inlineClasses/defaultParameterValues/defaultWithDefaultParameter/compatibility.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                        register("compiler/testData/codegen/box/inlineClasses/defaultParameterValues/defaultWithDefaultParameter/compatibilityGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                         register("compiler/testData/codegen/box/inlineClasses/defaultParameterValues/defaultWithDefaultParameter/default.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                        register("compiler/testData/codegen/box/inlineClasses/defaultParameterValues/defaultWithDefaultParameter/defaultGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     }
 
                     @Test
@@ -18176,9 +18861,13 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
                 public class OverrideFunctionWithDefaultParameter {
                     public OverrideFunctionWithDefaultParameter() {
                         register("compiler/testData/codegen/box/inlineClasses/defaultParameterValues/overrideFunctionWithDefaultParameter/all.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                        register("compiler/testData/codegen/box/inlineClasses/defaultParameterValues/overrideFunctionWithDefaultParameter/allGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                         register("compiler/testData/codegen/box/inlineClasses/defaultParameterValues/overrideFunctionWithDefaultParameter/all-compatibility.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                        register("compiler/testData/codegen/box/inlineClasses/defaultParameterValues/overrideFunctionWithDefaultParameter/all-compatibilityGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                         register("compiler/testData/codegen/box/inlineClasses/defaultParameterValues/overrideFunctionWithDefaultParameter/compatibility.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                        register("compiler/testData/codegen/box/inlineClasses/defaultParameterValues/overrideFunctionWithDefaultParameter/compatibilityGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                         register("compiler/testData/codegen/box/inlineClasses/defaultParameterValues/overrideFunctionWithDefaultParameter/default.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
+                        register("compiler/testData/codegen/box/inlineClasses/defaultParameterValues/overrideFunctionWithDefaultParameter/defaultGeneric.kt", TransformersFunctions.getRemoveOptionalJvmInlineAnnotation());
                     }
 
                     @Test
@@ -18417,7 +19106,8 @@ public class ExternalTestGenerated extends AbstractExternalNativeBlackBoxTest {
             @Nested
             @TestMetadata("compiler/testData/codegen/box/inlineClasses/genericUnderlyingValue")
             @TestDataPath("$PROJECT_ROOT")
-            @NativeBlackBoxTestCaseGroupProvider(ExtTestCaseGroupProvider.class)
+            @Tag("external")
+            @UseExtTestCaseGroupProvider()
             public class GenericUnderlyingValue {
                 @Test
                 public void testAllFilesPresentInGenericUnderlyingValue() throws Exception {
