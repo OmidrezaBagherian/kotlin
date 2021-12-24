@@ -22,6 +22,7 @@ import org.jetbrains.kotlin.ir.types.*
 import org.jetbrains.kotlin.ir.types.impl.IrSimpleTypeImpl
 import org.jetbrains.kotlin.ir.types.impl.IrStarProjectionImpl
 import org.jetbrains.kotlin.ir.types.impl.makeTypeProjection
+import org.jetbrains.kotlin.ir.util.defaultType
 import org.jetbrains.kotlin.ir.util.isLocal
 import org.jetbrains.kotlin.ir.util.render
 import org.jetbrains.kotlin.utils.addToStdlib.safeAs
@@ -109,7 +110,7 @@ fun IrType.defaultValue(startOffset: Int, endOffset: Int, context: JvmBackendCon
     if (this !is IrSimpleType || hasQuestionMark || classOrNull?.owner?.isInline != true)
         return IrConstImpl.defaultValueForType(startOffset, endOffset, this)
 
-    val underlyingType = unboxInlineClass()
+    val underlyingType = unboxInlineClass().erasedUpperBound.defaultType
     val defaultValueForUnderlyingType = IrConstImpl.defaultValueForType(startOffset, endOffset, underlyingType)
     return IrCallImpl.fromSymbolOwner(startOffset, endOffset, this, context.ir.symbols.unsafeCoerceIntrinsic).also {
         it.putTypeArgument(0, underlyingType) // from

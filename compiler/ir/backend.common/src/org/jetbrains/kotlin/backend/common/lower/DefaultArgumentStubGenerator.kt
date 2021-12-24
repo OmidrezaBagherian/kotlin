@@ -598,8 +598,10 @@ private fun IrFunction.generateDefaultsFunctionImpl(
 
     newFunction.valueParameters = valueParameters.map {
         val newType = it.type.remapTypeParameters(classIfConstructor, newFunction.classIfConstructor)
-        val makeNullable = it.defaultValue != null &&
-                (context.ir.unfoldInlineClassType(it.type) ?: it.type) !in context.irBuiltIns.primitiveIrTypes
+        val type = with(context.typeSystem) {
+            context.ir.unfoldInlineClassType(it.type)?.erasedUpperBound()?.defaultType
+        } ?: it.type
+        val makeNullable = it.defaultValue != null && type !in context.irBuiltIns.primitiveIrTypes
         it.copyTo(
             newFunction,
             type = if (makeNullable) newType.makeNullable() else newType,
