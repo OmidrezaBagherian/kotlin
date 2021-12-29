@@ -62,6 +62,7 @@ class Fir2IrConverter(
         irGenerationExtensions: Collection<IrGenerationExtension>,
         fir2irVisitor: Fir2IrVisitor,
         languageVersionSettings: LanguageVersionSettings,
+        descriptorMangler: KotlinMangler.DescriptorMangler,
         extensions: StubGeneratorExtensions,
     ) {
         for (firFile in allFirFiles) {
@@ -69,7 +70,11 @@ class Fir2IrConverter(
         }
 
         val irProviders =
-            generateTypicalIrProviderList(irModuleFragment.descriptor, irBuiltIns, symbolTable, extensions = extensions)
+            generateTypicalIrProviderList(
+                irModuleFragment.descriptor, irBuiltIns, symbolTable,
+                descriptorFinder = DescriptorByIdSignatureFinderImpl(irModuleFragment.descriptor, descriptorMangler),
+                extensions = extensions
+            )
         val externalDependenciesGenerator = ExternalDependenciesGenerator(
             symbolTable,
             irProviders
@@ -457,7 +462,8 @@ class Fir2IrConverter(
             }
 
             converter.runSourcesConversion(
-                allFirFiles, irModuleFragment, irGenerationExtensions, fir2irVisitor, languageVersionSettings, generatorExtensions
+                allFirFiles, irModuleFragment, irGenerationExtensions, fir2irVisitor, languageVersionSettings,
+                descriptorMangler, generatorExtensions
             )
 
             return Fir2IrResult(irModuleFragment, symbolTable, components)
