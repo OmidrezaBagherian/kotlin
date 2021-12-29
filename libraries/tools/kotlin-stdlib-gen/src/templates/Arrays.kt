@@ -1647,6 +1647,16 @@ object ArrayOps : TemplateGroupBase() {
                     "java.util.Arrays.fill(this, fromIndex, toIndex, element)"
                 }
             }
+            on(Platform.JS) {
+                suppress("ACTUAL_FUNCTION_WITH_DEFAULT_ARGUMENTS")
+                since("1.3")
+                body {
+                    """
+                    AbstractList.checkRangeIndexes(fromIndex, toIndex, size)
+                    nativeFill(element, fromIndex, toIndex);
+                    """
+                }
+            }
             on(Platform.Native) {
                 suppress("ACTUAL_FUNCTION_WITH_DEFAULT_ARGUMENTS")
                 since("1.3")
@@ -1661,16 +1671,6 @@ object ArrayOps : TemplateGroupBase() {
                         }
                         """
                     }
-                }
-            }
-            on(Platform.JS) {
-                since("1.3")
-                suppress("ACTUAL_FUNCTION_WITH_DEFAULT_ARGUMENTS")
-                body {
-                    """
-                    AbstractList.checkRangeIndexes(fromIndex, toIndex, size)
-                    nativeFill(element, fromIndex, toIndex);
-                    """
                 }
             }
             on(Platform.Common) {
