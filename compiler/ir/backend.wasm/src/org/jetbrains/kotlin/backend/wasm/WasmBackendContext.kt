@@ -44,6 +44,8 @@ class WasmBackendContext(
     override val scriptMode = false
     override val irFactory: IrFactory = symbolTable.irFactory
 
+    override val additionalExportedDeclarations: MutableSet<IrDeclaration> = mutableSetOf()
+
     // Place to store declarations excluded from code generation
     private val excludedDeclarations = mutableMapOf<FqName, IrPackageFragment>()
 

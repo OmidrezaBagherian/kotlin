@@ -55,7 +55,7 @@ class JsIrBackendContext(
     override val configuration: CompilerConfiguration, // TODO: remove configuration from backend context
     override val scriptMode: Boolean = false,
     override val es6mode: Boolean = false,
-    val dceRuntimeDiagnostic: RuntimeDiagnostic? = null,
+    override val dceRuntimeDiagnostic: RuntimeDiagnostic? = null,
     propertyLazyInitialization: Boolean = false,
     val baseClassIntoMetadata: Boolean = false,
     val safeExternalBoolean: Boolean = false,
@@ -89,7 +89,7 @@ class JsIrBackendContext(
     val externalPackageFragment = mutableMapOf<IrFileSymbol, IrFile>()
     val externalDeclarations = hashSetOf<IrDeclaration>()
 
-    val additionalExportedDeclarations = mutableSetOf<IrDeclaration>()
+    override val additionalExportedDeclarations = mutableSetOf<IrDeclaration>()
 
     val bodilessBuiltInsPackageFragment: IrPackageFragment = IrExternalPackageFragmentImpl(
         DescriptorlessExternalPackageFragmentSymbol(),

@@ -22,6 +22,7 @@ import org.jetbrains.kotlin.ir.types.IrType
 import org.jetbrains.kotlin.ir.util.SymbolTable
 import org.jetbrains.kotlin.ir.util.getPropertyGetter
 import org.jetbrains.kotlin.ir.util.getPropertySetter
+import org.jetbrains.kotlin.js.config.RuntimeDiagnostic
 import org.jetbrains.kotlin.name.FqName
 import org.jetbrains.kotlin.name.Name
 import org.jetbrains.kotlin.resolve.scopes.MemberScope
@@ -31,6 +32,9 @@ interface JsCommonBackendContext : CommonBackendContext {
 
     val reflectionSymbols: ReflectionSymbols
     val propertyLazyInitialization: PropertyLazyInitialization
+
+    val dceRuntimeDiagnostic: RuntimeDiagnostic? get() = null
+    val additionalExportedDeclarations: MutableSet<IrDeclaration>
 
     override val inlineClassesUtils: JsCommonInlineClassesUtils
 
