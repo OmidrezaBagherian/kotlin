@@ -229,12 +229,15 @@ object FirInlineClassDeclarationChecker : FirRegularClassChecker() {
         val primaryConstructor = asRegularClass.declarationSymbols
             .firstOrNull { it is FirConstructorSymbol && it.isPrimary } as FirConstructorSymbol?
             ?: return false
+
+        val old = visited.toHashSet()
+
+        class NestedHashSet : HashSet<ConeKotlinType>(old) {
+            override fun add(element: ConeKotlinType): Boolean = super.add(element).also { visited.add(element) }
+        }
         return primaryConstructor
             .valueParameterSymbols
-            .firstOrNull()
-            ?.resolvedReturnTypeRef
-            ?.coneType
-            ?.isRecursiveInlineClassType(visited, session) == true
+            .any { it.resolvedReturnTypeRef.coneType.isRecursiveInlineClassType(NestedHashSet(), session) }
     }
 
     private fun FirRegularClass.isSubtypeOfCloneable(session: FirSession): Boolean {
