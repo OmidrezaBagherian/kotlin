@@ -21,23 +21,23 @@ using namespace kotlin;
 namespace {
 
 template <size_t Capacity = kDynamicCapacity>
-NO_INLINE StackTrace<Capacity> GetStackTrace1(size_t skipFrames = 0) {
+DISABLE_TAIL_CALLS NO_INLINE StackTrace<Capacity> GetStackTrace1(size_t skipFrames = 0) {
     return StackTrace<Capacity>::current(skipFrames);
 }
 
 template <size_t Capacity = kDynamicCapacity>
-NO_INLINE StackTrace<Capacity> GetStackTrace2(size_t skipFrames = 0) {
+DISABLE_TAIL_CALLS NO_INLINE StackTrace<Capacity> GetStackTrace2(size_t skipFrames = 0) {
     return GetStackTrace1<Capacity>(skipFrames);
 }
 
 template <size_t Capacity = kDynamicCapacity>
-NO_INLINE StackTrace<Capacity> GetStackTrace3(size_t skipFrames = 0) {
+DISABLE_TAIL_CALLS NO_INLINE StackTrace<Capacity> GetStackTrace3(size_t skipFrames = 0) {
     return GetStackTrace2<Capacity>(skipFrames);
 }
 
 // Disable optimizations for these functions to avoid inlining and tail recursion optimization.
 template <size_t Capacity = kDynamicCapacity>
-[[clang::optnone]] StackTrace<Capacity> GetDeepStackTrace(size_t depth) {
+OPTNONE StackTrace<Capacity> GetDeepStackTrace(size_t depth) {
     if (depth <= 1) {
         return StackTrace<Capacity>::current();
     } else {
